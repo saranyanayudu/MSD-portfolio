@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2em;
+    color: #555;
+    cursor: default;
+}
+
+.logo span {
+    color: #7d2ae8;
+}
+
+.navigation a {
+    font-size: 1.1em;
+    color: #555;
+    text-decoration: none;
+    margin-left: 40px;
+    font-weight: 500;
+}
+
+.navigation a:hover {
+    color: #7d2ae8;
+}
+
+.btn-talk {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 35px;
+    background: #7d2ae8;
+    border-radius: 10px;
+    border: 2px solid #7d2ae8;
+    font-weight: 500;
+}
+
+.btn-talk:hover {
+    color: #7d2ae8;
+    background: transparent;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+/* Flex container for text and image */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+}
+
+/* Ensure that content within .text-content is stacked vertically */
+.text-content {
+    max-width: 60%; /* Adjust width as needed */
+    color: #555;
+}
+
+/* Styling for h2 and h4 to ensure they stack correctly */
+.text-content h2 {
+    font-size: 3em;
+    margin-bottom: 10px; /* Space between heading and subtitle */
+}
+
+.text-content h2 span {
+    color: #7d2ae8;
+}
+
+.text-content h4 {
+    font-size: 2em;
+    margin-bottom: 20px; /* Space between subtitle and paragraph */
+}
+
+/* Styling for paragraph */
+.text-content p {
+    font-size: 1.2em;
+    margin-bottom: 40px; /* Space below paragraph */
+}
+
+.btn-group a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 40px;
+    background: #7d2ae8;
+    border-radius: 10px;
+    border: 2px solid #7d2ae8;
+    font-weight: 500;
+    transition: 0.3s;
+    font-size: 1.1em;
+    display: inline-block;
+}
+
+.btn-group a:hover {
+    color: #7d2ae8;
+    background: transparent;
+    border: 2px solid #7d2ae8;
+}
+
+/* Larger profile image styling */
+.profile-image {
+    width: 400px; /* Larger width */
+    height: 400px; /* Larger height */
+    border-radius: 50%; /* Circular image */
+    object-fit: cover;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 30px; /* Space between text and image */
+}
+
+#about {
+    background-color: #f8f8fc;
+    padding: 30px 100px;
+    border-radius: 10px;
+    color: #555;
+}
+
+#about span {
+    color: #7d2ae8;
+}
+
+#about h2 {
+    font-size: 2em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+#about p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+#education {
+    background-color: #f8f8fc;
+    padding: 30px 100px;
+    border-radius: 10px;
+    color: #555;
+}
+
+#education h2 {
+    font-size: 2em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+#education span {
+    color: #7d2ae8;
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid #7d2ae8;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f9;
+    font-weight: 600;
+}
+
+td {
+    background-color: #ffffff;
+}
+
+#projects {
+    padding: 30px 100px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures projects wrap to the next line if needed */
+}
+
+#projects .project {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s ease;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; /* Center text inside project div */
+}
+
+#projects h2 {
+    font-size: 2em;
+}
+
+#projects span {
+    color: #7d2ae8;
+}
+
+#projects .project h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #003366;
+}
+
+#projects .project:hover {
+    transform: scale(1.02);
+}
+
+#projects img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project button {
+    width: 100px; /* Adjusted button width */
+    background-color: #7d2ae8;
+    border-radius: 7px;
+}
+
+.project button a {
+    text-decoration: none;
+    font-size: 1em;
+    color: white;
+}
+
+.project button:hover {
+    background-color: white;
+}
+
+.project button a:hover {
+    color: #7d2ae8;
+}
+
+#contact {
+    padding: 30px 100px;
+    background: #f9f9f9;
+    border-radius: 10px;
+}
+
+#contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#contact .form-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#contact .form-inputs,
+#contact .form-message {
+    width: 48%;
+}
+
+#contact label {
+    margin: 10px 0 5px;
+    font-weight: 600;
+    display: block;
+}
+
+#contact input,
+#contact textarea {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: none;
+    border-color: #7d2ae8;
+}
+
+#contact button {
+    padding: 10px 20px;
+    background: #7d2ae8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+#contact button:hover {
+    background: #6c63ff;
+}
+
+#formStatus {
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: green;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #f4f4f9;
+    color: #7d2ae8;
+    border-top: 2px solid #e0e0e0;
+}
